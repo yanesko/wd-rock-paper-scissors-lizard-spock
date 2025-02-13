@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>R.P.S.L.S.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <h1>Rock Paper Scissors Lizard Spock</h1>
+  
+  <div class="bigContainer">
+    <div class="container">
+      <div class="gameArea" >
+        <div class="player">You:</div>
+        <div class="scoreboard">
+          <span class="playerScore">0</span>
+          :
+          <span class="compScore">0</span></div>
+        <div class="player">Comp:</div>
+        <div class="gesture">
+          <i class="playerGesture"></i>
+        </div>
+        <div class="message">
+          <p id="text1">Race to 5!</p>
+          <p id="text2"></p>
+        </div>
+        <div class="gesture">
+          <i class="compGesture"></i>
+        </div>
+        <div>
+          <p id="text3">Choose your weapon</p>
+        </div>
+        <div>
+          <button class="weapon rock"><i class="far fa-hand-rock fa-3x"></i></button>
+          <button class="weapon paper"><i class="far fa-hand-paper fa-3x"></i></button>
+          <button class="weapon scissors"><i class="far fa-hand-scissors fa-3x"></i></button>
+          <button class="weapon lizard"><i class="far fa-hand-lizard fa-3x"></i></button>
+          <button class="weapon spock"><i class="far fa-hand-spock fa-3x"></i></button>
+        </div>
+    </div> <!-- .gameArea -->
+     <div class="menu">
+       <button class="resetButton">New Game</button>
+       <button class="rulesButton">Show Rules</button>
+     </div>  <!-- .menu -->
+    </div> <!-- .container -->
+    
+   <div class="rules">
+      <p>SCISSORS cuts PAPER</p>
+      <p>PAPER covers ROCK</p>
+      <p>ROCK crushes LIZARD</p>
+      <p>LIZARD poisons SPOCK</p>
+      <p>SPOCK smashes SCISSORS</p>
+      <p>SCISSORS decapitates LIZARD</p>
+      <p>LIZARD eats PAPER</p>
+      <p>PAPER disproves SPOCK</p>
+      <p>SPOCK vaporizes ROCK</p>
+      <p><i>(and as it always has)</i></p> 
+      <p>ROCK crushes SCISSORS</p>
+   </div> <!-- .rules -->
+  </div> <!-- .bigContainer -->
+  <footer>
+    &copy; Coded by Yana Pryymachenko
+  </footer>
+
+ <script type="text/javascript" src="logic.js"></script>   
+</body>
+</html>

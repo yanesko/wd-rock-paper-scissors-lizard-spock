@@ -1,0 +1,206 @@
+/*---------------------------------------------------
+ * General *
+-----------------------------------------------------*/
+
+* { box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;  
+} 
+body {
+	font-family: 'Boogaloo', cursive;
+	text-align: center;
+	background: #f0f0f0;
+}
+h1{
+	font-size: 45px;
+	letter-spacing: 1.5px;
+	color: black/*#7a0092*/;
+	margin: 0;
+	padding: 30px;
+}
+
+footer {
+	background: #939393;
+	color: white;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	padding: 13px;
+	font-size: 20px;
+}
+
+/*---------------------------------------------------
+ * Containers *
+-----------------------------------------------------*/
+
+.bigContainer{
+	margin: auto;
+	width: 900px;
+}
+.container {
+	width: 500px;
+	margin: auto;
+}
+.gameArea{
+	padding: 20px 0;
+	border-radius: 25px;
+	border: 3px solid black;
+	background: white;
+	box-shadow: 0px 0px 2px 1px rgba(214,214,214,1);
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(214,214,214,0.8);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(214,214,214,1);
+}
+.rules {
+	border: 2px dashed black;
+	border-radius: 7px;
+	width:350px;
+	margin: 0 25px;
+	float: left;
+	display: none;
+}
+
+/*---------------------------------------------------
+ * Elements *
+-----------------------------------------------------*/
+
+.player{
+	width: 35%;
+	height: 80px;
+	float: left;
+	font-size: 40px;
+}
+.scoreboard{
+	width: 30%;
+	float: left;
+	border: 3px solid black;
+	border-radius: 25px;
+	font-size: 50px;
+}
+.gesture{
+	width: 33%;
+	height: 150px;
+	float:left;
+}
+.message{
+	width: 34%;
+	float: left;
+}
+#text1 {
+	font-size: 30px;
+	color: #d52816;	
+	margin-bottom: 0;
+}
+#text2{
+	margin-top: 10px;
+	letter-spacing: 1.3px;
+}
+#text3 {
+	font-size: 22px;
+	letter-spacing: 1.5px;
+}
+.weapon {
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	margin-left: 7px;
+	color: white;
+	border: 0.5px solid #939393;
+	box-shadow: 0px 0px 1px 2px rgba(240,240,240,1);
+	-webkit-box-shadow: 0px 0px 1px 2px rgba(240,240,240,1);
+	-moz-box-shadow: 0px 0px 1px 2px rgba(240,240,240,1);
+	outline: none;
+}
+.weapon:hover {
+	transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	-webkit-transform: translateY(8px);
+	-moz-transform: translateY(2px);
+}
+.weapon:active {
+	background-color: white;
+	border: white;
+	color: rgba(240,240,240,1);
+}	
+.rock {
+	background: #2661d5;
+}
+.paper {
+	background: #d52816;
+}
+.scissors {
+	background: #057743;
+	transform: scaleX(-1) rotate(90deg);
+	-ms-transform: scaleX(-1) rotate(90deg);
+	-webkit-transform: scaleX(-1) rotate(90deg);
+	-moz-transform: scaleX(-1) rotate(90deg);
+}
+.scissors:hover {
+	transform: translateY(8px) scaleX(-1) rotate(90deg);
+	-ms-transform: translateY(8px) scaleX(-1) rotate(90deg);
+	-webkit-transform: translateY(8px) scaleX(-1) rotate(90deg);
+	-moz-transform: translateY(8px) scaleX(-1) rotate(90deg);
+}
+.lizard {
+	background: #f0ac0b;
+}
+.spock {
+	background: #7a0092;
+	margin-right: 5px;
+}
+.menu {
+	padding: 20px;
+	font-size: 22px;
+}
+.resetButton, .rulesButton {
+	border-radius: 10px;
+	padding: 5px 10px;
+	outline: none;
+}
+
+.rules p {
+	margin: 10px;
+	font-size: 22px;
+	letter-spacing: 1.5px;
+}
+
+/*---------------------------------------------------
+ * Transformations *
+-----------------------------------------------------*/
+
+.flip{
+	transform: ;
+	-ms-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+}
+.rotateRight {
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}
+.rotateLeftFlip {
+	transform: rotate(-90deg) scaleX(-1);
+	-ms-transform: rotate(-90deg) scaleX(-1);
+	-webkit-transform: rotate(-90deg) scaleX(-1);
+	-moz-transform: rotate(-90deg) scaleX(-1);
+}
+
+.align {
+	float: left;
+}
+.show {
+	display: block;
+}
+
+/*---------------------------------------------------
+ * Responsive *
+-----------------------------------------------------*/
+@media only screen and (max-width: 760px) {
+	.bigContainer {
+		max-width: 500px;
+	}
+	.rules {
+		margin: 0 75px;
+	}
+}
